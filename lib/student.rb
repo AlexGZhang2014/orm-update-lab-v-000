@@ -61,6 +61,10 @@ class Student
       SELECT * FROM students
       WHERE name = ?
     SQL
+    
+    DB[:conn].execute(sql, name).map do |row|
+      self.new(row[1], row[2], row[0])
+    end.first
   end
 
 

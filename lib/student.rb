@@ -66,6 +66,10 @@ class Student
       self.new(row[1], row[2], row[0])
     end.first
   end
+  
+  def update
+    
+  end
 
 
 end

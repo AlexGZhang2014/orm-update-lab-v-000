@@ -48,6 +48,10 @@ class Student
   def self.create(name, grade)
     self.new(name, grade)
   end
+  
+  def self.new_from_db
+    
+  end
 
 
 end

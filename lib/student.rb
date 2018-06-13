@@ -45,8 +45,8 @@ class Student
     end
   end
   
-  def self.create
-    
+  def self.create(name, grade)
+    self.new(name, grade)
   end
 
 
